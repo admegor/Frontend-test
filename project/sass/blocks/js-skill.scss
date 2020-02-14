@@ -1,0 +1,9 @@
+.js-skill {   
+    &__header {
+        @include form-header;       
+        &::before {
+            @include form-icon;
+            background: url('../../img/icon-js.svg') no-repeat center center;
+        }
+    }
+}

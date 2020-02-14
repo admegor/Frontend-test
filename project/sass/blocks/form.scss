@@ -1,0 +1,9 @@
+.form {
+    margin-bottom: 30px;
+    &__submit {
+        color: $white;
+        background-color: $blue;
+        padding: 17px 33px;
+        border-radius: 5px;
+    }
+}

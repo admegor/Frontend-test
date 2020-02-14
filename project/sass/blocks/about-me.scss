@@ -1,0 +1,18 @@
+.about-me {
+    &__header {
+        @include form-header;       
+        &::before {
+            @include form-icon;
+            background: url('../../img/icon-about.svg') no-repeat center center;
+        }
+    }
+
+    &__textarea {
+        padding: 24px 20px;
+        border: 1px solid $grey-light;
+        border-radius: 5px;
+        resize: none;
+        width: 520px;
+
+    }
+}
