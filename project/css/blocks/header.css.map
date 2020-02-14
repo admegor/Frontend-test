@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"header.css","sourcesContent":[]}
+{"version":3,"sources":["blocks/header.scss"],"names":[],"mappings":"AAEI;EACI,gBAAgB;EAChB,cAAc;EACd,YAAY,EAAA;;AAGhB;EACI,YAAY;EACZ,aAAa;EACb,mBAAmB,EAAA","file":"header.css","sourcesContent":[".header {\r\n\r\n    &__inner {\r\n        max-width: 770px;\r\n        margin: 0 auto;\r\n        height: 80px;\r\n    }\r\n\r\n    &__main-nav {\r\n        height: 80px;\r\n        display: flex;\r\n        align-items: center;\r\n    }\r\n}"]}

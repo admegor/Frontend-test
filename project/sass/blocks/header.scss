@@ -1,0 +1,14 @@
+.header {
+
+    &__inner {
+        max-width: 770px;
+        margin: 0 auto;
+        height: 80px;
+    }
+
+    &__main-nav {
+        height: 80px;
+        display: flex;
+        align-items: center;
+    }
+}

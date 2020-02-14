@@ -1,0 +1,52 @@
+.experience {
+    &__header {
+        @include form-header;       
+        &::before {
+            @include form-icon;
+            background: url('../../img/icon-experience.svg') no-repeat center center;
+        }
+    }
+
+    &__wrap-block {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-height: 100px;        
+    }
+
+    
+
+    &__wrap-checkbox {
+        width: 280px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+
+        & input {
+            display: none;            
+        }
+
+        & label {
+            padding-left: 32px;
+        }
+    }
+
+    &__checkbox {     
+        position: absolute;
+        width: 21px;
+        height: 21px;   
+        background-image: url('../../img/checkbox-off.svg');
+    }
+
+    &__wrap-checkbox input:hover + .experience__checkbox {        
+        background-image: url('../../img/checkbox-hover.svg');            
+    }
+
+    &__wrap-checkbox input:checked + .experience__checkbox {        
+        background-image: url('../../img/Rounded\ Rectangle\ 3\ copy\ 3.svg');                     
+    }
+
+    
+    
+    
+}

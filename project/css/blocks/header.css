@@ -1,2 +1,11 @@
+.header__inner {
+  max-width: 770px;
+  margin: 0 auto;
+  height: 80px; }
+
+.header__main-nav {
+  height: 80px;
+  display: flex;
+  align-items: center; }
 
 /*# sourceMappingURL=header.css.map */

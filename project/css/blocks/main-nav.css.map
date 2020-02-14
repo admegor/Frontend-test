@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"main-nav.css","sourcesContent":[]}
+{"version":3,"sources":["blocks/main-nav.scss"],"names":[],"mappings":"AACI;EACI,SAAS;EACT,UAAU;EACV,gBAAgB,EAAA","file":"main-nav.css","sourcesContent":[".main-nav {\r\n    &__list {\r\n        margin: 0;\r\n        padding: 0;\r\n        list-style: none;\r\n    }\r\n}"]}

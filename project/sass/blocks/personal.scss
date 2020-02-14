@@ -1,0 +1,43 @@
+.personal {
+    margin-bottom: 38px;
+    &__header {
+        @include form-header;       
+        &::before {
+            @include form-icon;
+            background: url('../../img/icon-personal-info.svg') no-repeat center center;
+        }
+    }
+
+    &__wrap {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;       
+        
+    }
+}
+
+form {
+    text-align: center;
+}
+
+input[type=text],
+select {    
+    display: block;
+    margin: 0 auto;
+
+    height: 60px;    
+    width: 520px;
+    margin-bottom: 25px;
+
+    text-align: center;
+    font-size: 24px;
+    border-radius: 5px;
+    border-color: $grey-light;    
+    background-color: transparent;
+    border-style: solid;    
+}
+
+select {
+    width: 320px;
+}

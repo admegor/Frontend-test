@@ -11,103 +11,134 @@
 <body>
     <header class="header">
         <div class="header__inner">
-            <nav class="header__nav main-nav">
+            <nav class="header__main-nav main-nav">
                 <ul class="main-nav__list">
                     <li class="main-nav__item">
-                        <a href="#" class="main-nav__item main-nav__item--active">Личная информация</a>
+                        <a href="#" class="main-nav__link main-nav__link--active">Личная информация</a>
                     </li>
                     <li class="main-nav__item">
-                        <a href="#" class="main-nav__item">Опыт</a>
+                        <a href="#" class="main-nav__link">Опыт</a>
                     </li>
                     <li class="main-nav__item">
-                        <a href="#" class="main-nav__item">JavaScript</a>
+                        <a href="#" class="main-nav__link">JavaScript</a>
                     </li>
                     <li class="main-nav__item">
-                        <a href="#" class="main-nav__item">О себе</a>
+                        <a href="#" class="main-nav__link">О себе</a>
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
     <main class="main">
-        <div class="main__inner">
-            <h1 class="main__header">Анкета</h1>
-            <form class="main__form form" action="POST">
-                <fieldset class="form__personal-wrap personal">
-                    <legend>                        
-                        <h2 class="personal__header">Личная информация</h2>
-                    </legend>
-                    <input type="text" placeholder="ФИО">  
-                    <select name="list1">
-                        <option>Год рождения</option>
-                        <option>1998</option>
-                        <option>1997</option>
-                        <option>1996</option>
-                        <option>1995</option>
-                        <option>1994</option>
-                        <option>1993</option>
-                        <option>1991</option>
-                        <option>1991</option>
-                        <option>1990</option>
-                        <option>1988</option>
-                        <option>1987</option>
-                    </select></p>
-                    <input type="text" placeholder="Место проживания"> 
-                    <input type="text" placeholder="Skype"> 
-                    <input type="text" placeholder="E-mail"> 
-                </fieldset>
-
-                <fieldset class="form__experience experience">
-                    <legend>                        
-                        <h2 class="experience__header">Расскажите о своем опыте</h2>
-                    </legend>
-                    <div class="experience__wrap-checkbox">
-                        <input type="checkbox" name="BEM" id="BEM-field">
-                        <label for="BEM-field">БЭМ/OOCSS</label>
-                        <input type="checkbox" name="preprocessor" id="preprocessor-field">
-                        <label for="preprocessor">Stylus/LESS/SASS</label>
-                        <input type="checkbox" name="SVG" id="SVG-field">
-                        <label for="SVG-field">Работаю с SVG</label>
-                        <input type="checkbox" name="semantic" id="semantic-field">
-                        <label for="semantic-field">Верстаю семантично</label>
-                        <input type="checkbox" name="JS" id="JS-field">
-                        <label for="JS-field">ES2015/ES2016</label>
-                        <input type="checkbox" name="toolkit" id="toolkit-field">
-                        <label for="toolkit-field">Gulp/GRUNT </label>
-                        <input type="checkbox" name="Webpack" id="Webpack-field">
-                        <label for="Webpack-field">Webpack</label>
-                        <input type="checkbox" name="jQuery" id="jQuery-field">
-                        <label for="jQuery-field">jQuery</label>
-                        <input type="checkbox" name="Git" id="Git-field">
-                        <label for="Git-field">Ипользую Git</label>
-                    </div>
-                </fieldset>
-
-                <fieldset class="form__js-skill js-skill">
-                    <legend>                        
-                        <h2 class="js-skill__header">Уровень владения JavaScript</h2>
-                    </legend>
-                    <div class="js-skill__wrap">
-                        <p class="js-skill__lvl">Не владею</p>
-                        <p class="js-skill__lvl">Использую готовые решения</p>
-                        <p class="js-skill__lvl">Использую готовые решения и умею и переделывать</p>
-                        <p class="js-skill__lvl">Пишу сложный JS с нуля</p>
-                    </div>
-                </fieldset>
-
-                <fieldset class="form__about-me about-me">
-                    <legend>                        
-                        <h2 class="about-me__header">Расскажите о своем опыте</h2>
-                    </legend>
-                    <p class="about-me__subheader">Напишите несколько предложений, чем привлекла наша вакансия
-                        и что вы ожидаете от работы у нас.</p>
-                    <textarea id="about-me__field" name="about-me" rows="5"></textarea>
-                </fieldset>
-
-                <input class="button form__submit" type="submit" value="Готово">
-                
-
-            </form>
+        <div class="main__wrap">
+            <div class="main__inner">            
+                <h1 class="main__header">Анкета</h1>
+                <form class="main__form form" action="POST">
+                    <fieldset class="form__personal-wrap personal">
+                        <legend>                        
+                            <h2 class="personal__header">Личная информация</h2>
+                        </legend>
+                        <div class="personal__wrap">
+                            <input type="text" placeholder="ФИО">  
+                            <select name="list1">
+                                <option>Год рождения</option>
+                                <option>1998</option>
+                                <option>1997</option>
+                                <option>1996</option>
+                                <option>1995</option>
+                                <option>1994</option>
+                                <option>1993</option>
+                                <option>1991</option>
+                                <option>1991</option>
+                                <option>1990</option>
+                                <option>1988</option>
+                                <option>1987</option>
+                            </select>
+                            <input type="text" placeholder="Место проживания"> 
+                            <input type="text" placeholder="Skype"> 
+                            <input type="text" placeholder="E-mail"> 
+                        </div>
+                    </fieldset>
+    
+                    <fieldset class="form__experience experience">
+                        <legend>                        
+                            <h2 class="experience__header">Расскажите о своем опыте</h2>
+                        </legend>
+                        <div class="experience__wrap-block">
+                            <div class="experience__wrap-checkbox">                                
+                                <input type="checkbox" name="BEM" id="BEM-field">
+                                <span class="experience__checkbox"></span>
+                                <label for="BEM-field">БЭМ/OOCSS</label>
+                            </div>
+                            <div class="experience__wrap-checkbox">                                
+                                <input type="checkbox" name="preprocessor" id="preprocessor-field">
+                                <span class="experience__checkbox"></span>
+                                <label for="preprocessor">Stylus/LESS/SASS</label>
+                            </div>
+                            <div class="experience__wrap-checkbox">                                
+                                <input type="checkbox" name="SVG" id="SVG-field">
+                                <span class="experience__checkbox"></span>
+                                <label for="SVG-field">Работаю с SVG</label>
+                            </div>
+                            <div class="experience__wrap-checkbox">                                
+                                <input type="checkbox" name="semantic" id="semantic-field">
+                                <span class="experience__checkbox"></span>
+                                <label for="semantic-field">Верстаю семантично</label>
+                            </div>
+                            <div class="experience__wrap-checkbox">                                
+                                <input type="checkbox" name="JS" id="JS-field">
+                                <span class="experience__checkbox"></span>
+                                <label for="JS-field">ES2015/ES2016</label>
+                            </div>
+                            <div class="experience__wrap-checkbox">                                
+                                <input type="checkbox" name="toolkit" id="toolkit-field">
+                                <span class="experience__checkbox"></span>
+                                <label for="toolkit-field">Gulp/GRUNT </label>
+                            </div>
+                            <div class="experience__wrap-checkbox">                                
+                                <input type="checkbox" name="Webpack" id="Webpack-field">
+                                <span class="experience__checkbox"></span>
+                                <label for="Webpack-field">Webpack</label>
+                            </div>
+                            <div class="experience__wrap-checkbox">                                
+                                <input type="checkbox" name="jQuery" id="jQuery-field">
+                                <span class="experience__checkbox"></span>
+                                <label for="jQuery-field">jQuery</label>
+                            </div>
+                            <div class="experience__wrap-checkbox">                                
+                                <input type="checkbox" name="Git" id="Git-field">
+                                <span class="experience__checkbox"></span>
+                                <label for="Git-field">Ипользую Git</label>
+                            </div>
+                        </div>
+                    </fieldset>
+    
+                    <fieldset class="form__js-skill js-skill">
+                        <legend>                        
+                            <h2 class="js-skill__header">Уровень владения JavaScript</h2>
+                        </legend>
+                        <div class="js-skill__wrap">
+                            <p class="js-skill__lvl">Не владею</p>
+                            <p class="js-skill__lvl">Использую готовые решения</p>
+                            <p class="js-skill__lvl">Использую готовые решения и умею и переделывать</p>
+                            <p class="js-skill__lvl">Пишу сложный JS с нуля</p>
+                        </div>
+                    </fieldset>
+    
+                    <fieldset class="form__about-me about-me">
+                        <legend>                        
+                            <h2 class="about-me__header">Расскажите о своем опыте</h2>
+                        </legend>
+                        <p class="about-me__subheader">Напишите несколько предложений, чем привлекла наша вакансия
+                            и что вы ожидаете от работы у нас.</p>
+                        <textarea id="about-me__field" name="about-me" rows="5"></textarea>
+                    </fieldset>
+    
+                    <input class="button form__submit" type="submit" value="Готово">
+                    
+    
+                </form>                
+            </div>
         </div> 
     </main>    
 </body>

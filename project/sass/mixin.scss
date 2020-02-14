@@ -1,0 +1,27 @@
+@mixin reset {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+@mixin form-header {
+    margin: 0;
+    font-size: 30px;
+    line-height: 36px;
+    color: $black;
+    font-weight: 300;
+    padding-top: 70px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+@mixin form-icon {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -24px;
+
+    width: 48px;
+    height: 48px;
+}
