@@ -1,0 +1,1 @@
+{"version":3,"sources":["button.scss"],"names":[],"mappings":"AAAA;EACI,SAAS;EACT,UAAU;EACV,gBAAgB;EAChB,YAAY,EAAA","file":"button.css","sourcesContent":[".button {\r\n    margin: 0;\r\n    padding: 0;\r\n    background: none;\r\n    border: none;\r\n}"]}

@@ -1,4 +1,4 @@
-.test {
-    background-color: yellow;
-    color: #fdfdfd;
-}
+@import 'normalize.scss';
+@import 'scaffolding.scss';
+@import 'variables.scss';
+@import 'button.scss';

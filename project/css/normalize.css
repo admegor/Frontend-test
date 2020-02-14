@@ -304,33 +304,4 @@ template {
 [hidden] {
   display: none; }
 
-html {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0; }
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit; }
-
-body {
-  min-width: 320px;
-  margin: 0;
-  padding: 0;
-  font-size: 18px;
-  line-height: 27px;
-  font-family: "OpenSans", "Arial", sans-serif;
-  font-style: normal; }
-
-img {
-  max-width: 100%;
-  vertical-align: top; }
-
-.button {
-  margin: 0;
-  padding: 0;
-  background: none;
-  border: none; }
-
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=normalize.css.map */
